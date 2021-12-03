@@ -27,7 +27,7 @@ TOKEN = '5020798013:AAFNWGUSUkZeO6uhL22dLOmZGsa46Lr9vcY'
 APP_URL = f'https://em0ji.herokuapp.com/{TOKEN}'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
-bot.remove_webhook()
+# bot.remove_webhook()
 
 @bot.message_handler(commands=['start'])
 def start(message):
